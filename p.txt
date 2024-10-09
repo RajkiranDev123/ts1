@@ -1,0 +1,22 @@
+
+
+npm i typescript -g
+
+tsc.cmd app.ts
+tsc.cmd -v
+
+ext:
+ESLint
+Javascript and Typescript Nightly
+Prettier - Code Formatter
+Prettier ESLint
+Pretty Typescript Errors
+
+
+tsc.cmd --init
+tsc.cmd --watch
+
+npm init -y
+npm install --save-dev nodemon
+
+
