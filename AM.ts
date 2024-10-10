@@ -4,23 +4,27 @@
 //protected : only in parent and child class
 
 class BottleMaker{
+    protected protectedbottle:string="raj"
+    private privatebottle:string="plane"
+    constructor(public publicbottle:string){//declared and also initialized //public publicbottle:string
 
-    protected email:string="raj"
-    private hal:string="plane"
-    constructor(public name:string){}
+    }
 }
 
-class MetalBottleMaker extends BottleMaker{
-    constructor( name:string){
-        super(name)//invoke superclass constructor
+class MetalBottleMaker extends BottleMaker{//subclass
+    constructor( publicbottle:string){//only declared : publicbottle:string
+        super(publicbottle)//invoke superclass constructor
     }
-
     getValue(){
-        console.log(this.name)
+        console.log(this.publicbottle)
+        console.log(this.protectedbottle)
+        // console.log(this.privatebottle)  // cant do it
+
+
     }
-
-
 }
-
 let b1=new MetalBottleMaker("hilton")
 console.log("b1",b1)
+b1.publicbottle="56" //yes you can do it : everywhere
+// b1.protectedbottle  //cant do it
+// b1.privatebottle    //only within class
